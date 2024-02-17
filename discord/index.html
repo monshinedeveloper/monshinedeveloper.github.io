@@ -12,6 +12,9 @@
         height: 100vh;
         margin: 0;
     }
+    #loading-container {
+        text-align: center;
+    }
     #loading-circle {
         border: 16px solid #f3f3f3;
         border-top: 16px solid #3498db;
@@ -19,20 +22,17 @@
         width: 120px;
         height: 120px;
         animation: spin 2s linear infinite;
+        margin-bottom: 20px;
     }
     @keyframes spin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
     }
-    #loading-text {
-        text-align: center;
-        margin-top: 20px;
-    }
 </style>
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
         setTimeout(() => {
-            window.location.href = "https://discord.com/invite/UgfrqFhtge"; // Hier deine URL einfügen
+            window.location.href = ""; // Hier deine URL einfügen
         }, 60000);
 
         let seconds = 0;
@@ -63,7 +63,9 @@
 </script>
 </head>
 <body>
-<div id="loading-circle"></div>
-<div id="loading-text">connecting to Discord</div>
+<div id="loading-container">
+    <h1 id="loading-text">connecting to Discord</h1>
+    <div id="loading-circle"></div>
+</div>
 </body>
 </html>
