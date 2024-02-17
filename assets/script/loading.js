@@ -13,7 +13,7 @@ function startLoadingAnimation() {
             clearInterval(interval);
             // Weiterleitung nach 30 Sekunden
             setTimeout(function() {
-                window.location.href = 'WEITERLEITUNGS_URL_HIER_EINFÜGEN';
+                window.location.href = 'https://discord.com/invite/TwBktT957S';
             }, 1000);
         }
     }, 1000);
