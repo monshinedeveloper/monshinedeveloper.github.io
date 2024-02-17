@@ -1,1 +1,69 @@
-d
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading...</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    #loading-circle {
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid #3498db;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    #loading-text {
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        setTimeout(() => {
+            window.location.href = "https://example.com"; // Hier deine URL einfügen
+        }, 60000);
+
+        let seconds = 0;
+        let textElement = document.getElementById('loading-text');
+
+        setInterval(() => {
+            seconds++;
+
+            switch (true) {
+                case seconds <= 10:
+                    textElement.innerText = "connecting to Discord";
+                    break;
+                case seconds <= 45:
+                    textElement.innerText = "connecting to UE Jumper";
+                    break;
+                case seconds <= 55:
+                    textElement.innerText = "generate invite URL";
+                    break;
+                default:
+                    textElement.innerText = "Invite URL is ready, your invite will be available in " + (60 - seconds) + " seconds";
+            }
+
+            if (seconds === 60) {
+                seconds = 0;
+            }
+        }, 1000);
+    });
+</script>
+</head>
+<body>
+<div id="loading-circle"></div>
+<div id="loading-text">connecting to Discord</div>
+</body>
+</html>
