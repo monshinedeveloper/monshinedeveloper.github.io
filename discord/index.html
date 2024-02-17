@@ -43,13 +43,13 @@
                     textElement.innerText = "connecting to Discord";
                     break;
                 case seconds <= 45:
-                    textElement.innerText = "connecting to UE Jumper";
+                    textElement.innerText = "connecting to UE";
                     break;
                 case seconds <= 55:
-                    textElement.innerText = "generate invite URL";
+                    textElement.innerText = "generate URL";
                     break;
                 default:
-                    textElement.innerText = "Invite URL is ready, your invite will be available in " + (60 - seconds) + " seconds";
+                    textElement.innerText = "URL is ready" + (60 - seconds) + " seconds";
             }
 
             if (seconds <= 60) {
