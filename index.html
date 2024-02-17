@@ -1,31 +1,51 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Startseite</title>
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine Website</title>
+  <style>
+    /* Hier deine CSS-Stile */
+    #discordContent {
+      display: none;
+    }
+  </style>
+  <script>
+    function navigate() {
+      var selectedOption = document.querySelector("select").value;
+      if (selectedOption === "discord") {
+        document.getElementById("discordContent").style.display = "block";
+      } else {
+        document.getElementById("discordContent").style.display = "none";
+        if (selectedOption) {
+          window.location.href = selectedOption + ".html";
+        }
+      }
+    }
+  </script>
 </head>
 <body>
-<div class="header">
-  <span>╭────<span class="red-dark">U</span><span class="red-light">E</span><span class="red-light">J</span>────╮</span>
-  <div class="dropdown">
-    <button class="dropbtn"><p>&#x2630;</p></button>
-    <div class="dropdown-content">
-      <a href="index.html">Startseite</a>
-      <a href="discord.html">Discord</a>
-      <!-- Weitere Dokumente hier hinzufügen -->
+  <header>
+    <h1>Meine Website</h1>
+    <nav>
+      <select onchange="navigate()">
+        <option value="index">Startseite</option>
+        <option value="discord">Discord</option>
+      </select>
+    </nav>
+  </header>
+  <div id="content">
+    <div id="indexContent">
+      <!-- Hier der Inhalt der Startseite -->
+      <h2>Startseite</h2>
+      <p>Willkommen auf der Startseite!</p>
+      <img src="animation.gif" width="50%" height="auto" alt="Animation">
+    </div>
+    <div id="discordContent">
+      <!-- Hier den Inhalt von Discord.html -->
+      <h2>Discord</h2>
+      <p>Hier ist der Inhalt von Discord.</p>
     </div>
   </div>
-</div>
-<div class="content">
-    <h1>Welcome by UE Jumper Project</h1><br />
-  <img src="assets/65cfe2cf8a2545f899c07c4b.gif" alt="GIF" class="gif" style="width: 50%;">
-</div>
-<div class="footer">
-  <span>╰────<span class="red-dark">R</span><span class="red-light">O</span><span class="red-light">K</span>────╯</span>
-</div>
 </body>
 </html>
