@@ -4,27 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Discord</title>
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<script src="assets/script/loading.js"></script>
-<script src="assets/script/popup.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="loading.js"></script> <!-- Verlinkung auf loading.js -->
 </head>
 <body onload="startLoadingAnimation()">
 <div class="header">
   <span>╭────<span class="red-dark">U</span><span class="red-light">E</span><span class="red-light">J</span>────╮</span>
-  <button onclick="openPopup()" class="dropbtn">...</button> <!-- Änderung hier -->
-</div>
-</div>
-<h1>Create Discord Invite Link</h1>
-<div class="content">
-
-<div id="popup" class="popup">
-  <span onclick="closePopup()" class="close">X</span>
-  <div class="dropdown-content">
-    <a href="index.html">Startseite</a>
-    <a href="discord.html">Discord</a>
-    <!-- Weitere Dokumente hier hinzufügen -->
+  <div class="dropdown">
+    <button class="dropbtn">Dokumente</button>
+    <div class="dropdown-content">
+      <a href="index.html">Startseite</a>
+      <a href="discord.html">Discord</a>
+      <!-- Weitere Dokumente hier hinzufügen -->
+    </div>
   </div>
-
+</div>
+<div class="content">
   <div id="loading-circle" class="loading-circle"></div>
   <div id="loading-bar-container" class="loading-bar-container">
     <div id="loading-bar" class="loading-bar"></div>
