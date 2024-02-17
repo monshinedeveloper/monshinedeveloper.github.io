@@ -84,21 +84,3 @@ h1 {text-aligne: center;}
   background-color: #555;
 }
 
-/* Popup-Stil */
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid #ccc;
-  background-color: #fff;
-  z-index: 999;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.close {
-  float: right;
-  cursor: pointer;
-}
