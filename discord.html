@@ -3,15 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UE Jumper Project</title>
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+<title>Discord</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="loading.js"></script>
 </head>
-<body>
+<body onload="startLoadingAnimation()">
 <div class="header">
   <span>╭────<span class="red-dark">U</span><span class="red-light">E</span><span class="red-light">J</span>────╮</span>
 </div>
-<h1></h1>
+<div class="content">
+  <div id="loading-circle" class="loading-circle"></div>
+  <div id="loading-bar-container" class="loading-bar-container">
+    <div id="loading-bar" class="loading-bar"></div>
+  </div>
+</div>
 <div class="footer">
   <span>╰────<span class="red-dark">R</span><span class="red-light">O</span><span class="red-light">K</span>────╯</span>
 </div>
