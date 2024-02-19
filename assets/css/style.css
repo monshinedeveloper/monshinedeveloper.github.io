@@ -3,10 +3,12 @@ body {
 }
 
 h1 {
+    color: red;
     text-align: center;
 }
 
 p {
+    color: blue;
     text-align: center;
 }
 
@@ -14,3 +16,4 @@ h2 {
     color: red;
     text-align: center;
 }
+
