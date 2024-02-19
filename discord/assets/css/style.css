@@ -27,5 +27,12 @@ body {
 }
 
 section {
-    text-align: cursor: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh; /* Damit das Element den gesamten vertikalen Bildschirm einnimmt */
+}
+
+.mdl-spinner {
+  /* Deine weiteren Stildefinitionen für den Spinner */
 }
