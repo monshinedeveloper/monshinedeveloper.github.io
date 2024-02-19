@@ -17,6 +17,10 @@ h2 {
     text-align: center;
 }
 
+ul {
+    color: green;
+}
+
 @keyframes changeColor {
     0% { color: red; }
     25% { color: blue; }
