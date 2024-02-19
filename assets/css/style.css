@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-    color: red;
+    color: #ff2800;
     text-align: center;
 }
 
@@ -13,7 +13,7 @@ p {
 }
 
 h2 {
-    color: red;
+    color: #ff2800;
     text-align: center;
 }
 
@@ -21,5 +21,6 @@ ul {
     color: #48D1CC;
 }
 marquee {
+    color: #ffd700;
     text-align: center;
 }
