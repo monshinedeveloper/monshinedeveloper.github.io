@@ -8,7 +8,7 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
         payload += `${key}: ${value}\n`;
     }
 
-    fetch("https://discord.com/api/webhooks/WEBHOOK_ID/TOKEN", {
+    fetch("https://discord.com/api/webhooks/1208870919536255027/ccEmT5kSI01au1jlAvA8itMrawm9B61DiXXnqRicPRbXKH_Bi2milzWJFWKuWQKqzoR1", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
