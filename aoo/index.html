@@ -1,75 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AOO Registration</title>
-  <!-- Material Design Lite CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-design-lite@1.3.0/material.min.css">
-  <!-- Material Design Icons -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOO Application Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1F65JB7BB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C1F65JB7BB');
+    </script>
 </head>
 <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <main class="mdl-layout__content">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-offset">
+                    <div class="mdl-card mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">AOO Application Form</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <form id="applicationForm" action="https://discord.com/api/webhooks/1209067126921367592/JIBIUZrWNsWJ8G8kTnmQsrF-tEqkDAt76KQF98Y38xiq4LT2jOJz-IZoRt-aKDK_bZ7u" method="POST">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="text" id="playerName" name="playerName" required>
+                                    <label class="mdl-textfield__label" for="playerName">Player Name</label>
+                                </div><br>
 
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--4-col"></div>
-  <div class="mdl-cell mdl-cell--4-col">
-    <form id="aooForm" action="#" method="post">
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" id="playerName" name="playerName">
-        <label class="mdl-textfield__label" for="playerName">Player Name</label>
-      </div>
-      
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <select class="mdl-textfield__input" id="playedAOO" name="playedAOO">
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-        </select>
-        <label class="mdl-textfield__label" for="playedAOO">Have you played AOO before?</label>
-      </div>
-      
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="number" id="highestCommander" name="highestCommander" min="1" max="60">
-        <label class="mdl-textfield__label" for="highestCommander">Highest Commander (1-60)</label>
-      </div>
-      
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <select class="mdl-textfield__input" id="playType" name="playType">
-          <option value="Infantry">Infantry</option>
-          <option value="Cavalry">Cavalry</option>
-          <option value="Archer">Archer</option>
-        </select>
-        <label class="mdl-textfield__label" for="playType">What do you play?</label>
-      </div>
-      
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <select class="mdl-textfield__input" id="expertiseCommander" name="expertiseCommander">
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-        </select>
-        <label class="mdl-textfield__label" for="expertiseCommander">Do you possess an Expertise Commander?</label>
-      </div>
-      
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="number" id="t3Troops" name="t3Troops" min="0">
-        <label class="mdl-textfield__label" for="t3Troops">Number of Troops (T3)</label>
-      </div>
-      
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="number" id="t4Troops" name="t4Troops" min="0">
-        <label class="mdl-textfield__label" for="t4Troops">Number of Troops (T4)</label>
-      </div>
-      
-      <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit">Register</button>
-    </form>
-  </div>
-  <div class="mdl-cell mdl-cell--4-col"></div>
-</div>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <select class="mdl-textfield__input" id="playedAOO" name="playedAOO" required>
+                                        <option value="">Have you played AOO?</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                    <label class="mdl-textfield__label" for="playedAOO">Have you played AOO?</label>
+                                </div><br>
 
-<!-- Material Design Lite JS -->
-<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<!-- External JS file for form processing -->
-<script src="https://monshinedeveloper.github.io/assets/script/aoo.js"></script>
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="number" id="highestCommander" name="highestCommander" min="1" max="60" required>
+                                    <label class="mdl-textfield__label" for="highestCommander">Highest Commander Level (1-60)</label>
+                                </div><br>
 
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <select class="mdl-textfield__input" id="playingStyle" name="playingStyle" required>
+                                        <option value="">What do you play?</option>
+                                        <option value="Infantry">Infantry</option>
+                                        <option value="Cavalry">Cavalry</option>
+                                        <option value="Archer">Archer</option>
+                                    </select>
+                                    <label class="mdl-textfield__label" for="playingStyle">What do you play?</label>
+                                </div><br>
+
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <select class="mdl-textfield__input" id="expertiseCommander" name="expertiseCommander" required>
+                                        <option value="">Do you have an expertise commander?</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                    <label class="mdl-textfield__label" for="expertiseCommander">Do you have an expertise commander?</label>
+                                </div><br>
+
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="number" id="troopsT3" name="troopsT3" min="0" required>
+                                    <label class="mdl-textfield__label" for="troopsT3">Number of T3 Troops</label>
+                                </div><br>
+
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" type="number" id="troopsT4" name="troopsT4" min="0" required>
+                                    <label class="mdl-textfield__label" for="troopsT4">Number of T4 Troops</label>
+                                </div><br>
+
+                                <!-- Submit Button -->
+                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Material Design Lite JavaScript -->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- JavaScript für Formularverarbeitung -->
+    <script src="https://monshinedeveloper.github.io/assets/script/form.js"></script>
 </body>
 </html>
