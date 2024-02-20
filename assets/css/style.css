@@ -1,26 +1,22 @@
-body {
-    background-color: #C0C0C0;
+/* Bild Slider */
+.slider {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  scroll-behavior: smooth;
 }
 
-h1 {
-    color: #ff2800;
-    text-align: center;
+.slide {
+  width: 100%;
 }
 
-p {
-    color: #2e5978;
-    text-align: center;
+/* Text zentriert */
+.text-container {
+  display: flex;
+  justify-content: center;
 }
 
-h2 {
-    color: #ff2800;
-    text-align: center;
-}
-
-ul {
-    color: #48D1CC;
-}
-marquee {
-    color: #ffd700;
-    text-align: center;
+.centered-text {
+  text-align: center;
 }
