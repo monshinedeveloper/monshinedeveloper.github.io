@@ -1,5 +1,6 @@
 /* Bild Slider */
 .slider {
+  width: 100%;
   overflow-x: auto;
   white-space: nowrap;
   display: flex;
@@ -7,6 +8,13 @@
 }
 
 .slide {
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Skaliert das Bild, um den gesamten Bereich zu füllen, während das Seitenverhältnis beibehalten wird */
 }
 
 /* Text zentriert */
