@@ -1,6 +1,5 @@
 /* Bild Slider */
 .slider {
-  width: 100%;
   overflow-x: auto;
   white-space: nowrap;
   display: flex;
@@ -8,7 +7,6 @@
 }
 
 .slide {
-  width: 100%;
 }
 
 /* Text zentriert */
