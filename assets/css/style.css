@@ -1,6 +1,6 @@
 /* Bild Slider */
 .slider {
-  width: 75%;
+  width: 50%;
   overflow-x: auto;
   white-space: nowrap;
   display: flex;
@@ -8,7 +8,7 @@
 }
 
 .slide {
-  width: 75%;
+  width: 100%;
 }
 
 .slide img {
