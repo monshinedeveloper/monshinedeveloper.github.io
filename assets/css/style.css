@@ -1,14 +1,13 @@
 /* Bild Slider */
 .slider {
   width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
-  display: flex;
-  scroll-behavior: smooth;
+  overflow: hidden;
+  position: relative;
 }
 
 .slide {
   width: 100%;
+  display: none;
 }
 
 .slide img {
