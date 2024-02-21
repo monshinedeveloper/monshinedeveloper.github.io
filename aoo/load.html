@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Circle</title>
+  <!-- Getmdl CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css">
+  <!-- Getmdl JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.min.js"></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="mdl-spinner mdl-js-spinner is-active"></div>
+  <script>
+    function changeColor() {
+      var colors = ['red', 'green', 'blue', 'yellow'];
+      var randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.querySelector('.mdl-spinner').style.borderColor = randomColor;
+    }
+    setInterval(changeColor, 1000);
+
+    setTimeout(function() {
+      window.location.href = "https://monshinedeveloper.github.io/aoo/";
+    }, 10000);
+  </script>
+</body>
+</html>
